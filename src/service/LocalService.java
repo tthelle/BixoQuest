@@ -12,7 +12,7 @@ public class LocalService {
     }
 
     public boolean estudar(Jogador jogador, Mundo mundo, Local local){
-        if(local.getTipo() != Local.TipoLocal.BIBLIOTECA && local.getTipo() != Local.TipoLocal.LABORATORIO){
+        if(local.getTipo() != Local.TipoLocal.BIBLIOTECA || local.getTipo() != Local.TipoLocal.LABORATORIO){
             return false;
         }
         return JogadorService.estudar(jogador, mundo);
