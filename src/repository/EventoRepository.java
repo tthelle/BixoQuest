@@ -8,7 +8,7 @@ public class EventoRepository {
         return new Evento(
                 "Encontrou um amigo",
                 "Você encontrou um amigo pelo campus! Conversar animou seu dia.",
-                0, +20, +10, 0, 4, 1.0
+                0, +20, +10, 0, 8, 1.0
         );
     }
 
@@ -63,9 +63,17 @@ public class EventoRepository {
         return new Evento(
                 "Encontrou um animal",
                 "Você encontrou um animalzinho fofo! Fazer carinho nele te deixa motivado!",
-                0, +5, 0, 0, 1, 1.0
+                0, +5, 0, 0, 8, 1.0
         );
     }
+    public static Evento encontrouProfessor() {
+        return new Evento(
+                "Encontrou um professor",
+                "Você encontrou um professor!",
+                0, +5, 0, 0, 6, 1.0
+        );
+    }
+
     //Determinação do array de eventos por local
     public static Evento[] eventosBandejao(){
         return new Evento[]{
@@ -75,7 +83,7 @@ public class EventoRepository {
 
     public static Evento[] eventosBiblioteca(){
         return new Evento[]{
-                encontrouAmigo(), encontrouAnimal()
+                encontrouAmigo(), encontrouAnimal(), encontrouProfessor()
         };
     }
 
@@ -87,13 +95,13 @@ public class EventoRepository {
 
     public static Evento[] eventosSaladeAula(){
         return new Evento[]{
-                materialCaro(), milagreAcademico(), arCondicionadoQuebrado()
+                materialCaro(), milagreAcademico(), arCondicionadoQuebrado(), provaSurpresa(), encontrouProfessor()
         };
     }
 
     public static Evento[] eventosCantina(){
         return new Evento[]{
-                filaGigante(),encontrouAmigo(), encontrouAnimal()
+                filaGigante(),encontrouAmigo(), encontrouAnimal(), encontrouProfessor()
         };
     }
 
