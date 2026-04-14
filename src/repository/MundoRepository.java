@@ -4,7 +4,7 @@ import model.*;
 
 import java.util.Arrays;
 import java.util.List;
-//CRIAR PROFESSORESSSSSSSSSSSSSSSSSSSSS
+
 public class MundoRepository {
     private Mundo mundo; //Instância do mundo
     //Construtor do mundo, populando ele com locais, disciplinas e NPCs
