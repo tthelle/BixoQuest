@@ -1,10 +1,10 @@
 package model;
 
 public class NPC {
-    private String nome;
-    private String[] frases;
-    private double probabilidadeAparecer;
-    private TipoNPC tipo; //Tipo do NPC
+    protected String nome;
+    protected String[] frases;
+    protected double probabilidadeAparecer;
+    protected TipoNPC tipo; //Tipo do NPC
     //Todos os tipos de NPC
     public enum TipoNPC {AMIGO, GATO, CACHORRO, MAELI, PROFESSOR}
     //Construtor
