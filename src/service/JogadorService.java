@@ -3,7 +3,7 @@ package service;
 import model.*;
 
 public class JogadorService {
-
+    //Ação de estudar
     public static boolean estudar(Jogador jogador, Mundo mundo){
         if (!mundo.gastarAcao(Mundo.CUSTO_ESTUDAR)){
             return false;
@@ -27,7 +27,7 @@ public class JogadorService {
 
         return true;
     }
-
+    //Pula o turno
     public void pularTurno(Jogador jogador, Mundo mundo){
         mundo.setPontosAcao(0);
         jogador.setDesempenhoAcademico((int) (jogador.getDesempenhoAcademico() - 10));
