@@ -1,10 +1,10 @@
 package model;
 
 public class Local {
-    private String nome;
-    private Evento[] eventos; //Eventos que podem acontecer no local
-    private TipoLocal tipo;
-    private Maeli maeli; //Só existe no colegiado
+    protected String nome;
+    protected Evento[] eventos; //Eventos que podem acontecer no local
+    protected TipoLocal tipo;
+    protected Maeli maeli; //Só existe no colegiado
 
     //Todos os tipos de locais disponiveis no mapa
     public enum TipoLocal {BANDEJAO, CANTINA, AREA_VERDE, COLEGIADO, SALA_DE_AULA, LABORATORIO, PONTO_DE_ONIBUS, BIBLIOTECA}
