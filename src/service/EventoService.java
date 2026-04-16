@@ -29,7 +29,7 @@ public class EventoService {
         return null;
     }
     //Sorteia um evento no array de eventos. Eventos com peso maior tem mais chance de ser sorteado;
-    private Evento possibilidadeEvento(Evento[] eventos){ //?????
+    private Evento possibilidadeEvento(Evento[] eventos){ 
         if (eventos == null || eventos.length == 0) {
             return null;
         }
