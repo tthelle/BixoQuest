@@ -66,14 +66,14 @@ public class DisciplinaService {
         return true;
     }
     //Aplica penalidade por faltas em uma disciplina
-    public void penalidadeFaltas(Disciplina disciplina, Jogador jogador){
+    public static void penalidadeFaltas(Disciplina disciplina, Jogador jogador){
         int faltas = disciplina.getFaltas();
         if (faltas > 0){
             jogador.setConhecimento(jogador.getConhecimento() - faltas * 5);
         }
     }
     //Encerra o semestre aplicando a penalidade por faltas em todas as disciplinas
-    public void fimDeSemestre(Jogador jogador){
+    public static void fimDeSemestre(Jogador jogador){
         for (Disciplina d : jogador.getDisciplinasMatriculadas()){
             penalidadeFaltas(d, jogador);
         }
