@@ -107,7 +107,7 @@ public class Disciplina {
         return this.aprovado;
     }
     //Calcula quantas aulas foram perdidas no semestre
-    public static void resetarFrequencia(){
+    public void resetarFrequencia(){
         this.aulasAssistidas = 0;
         this.aprovado = false;
         this.notaProva2 = 0;
