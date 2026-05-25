@@ -34,7 +34,7 @@ public class MundoService {
             return false;
         }
         jogador.setEnergia(Math.min(100, jogador.getEnergia()) + 30);
-        jogador.setEnergia(Math.min(100, jogador.getEnergia()) + 30);
+        jogador.setSaude(Math.min(100, jogador.getSaude()) + 30);
         avancarCalendario(jogador,mundo);
         return true;
     }
