@@ -1,5 +1,6 @@
 package service;
 
+import model.Disciplina;
 import model.Evento;
 import model.Jogador;
 import model.Mundo;
@@ -22,6 +23,11 @@ public class MundoService {
             mundo.setSemana(1);
             climaSemana(mundo);
             mundo.setSemestre(mundo.getSemestreAtual() + 1);
+            for (Disciplina disciplina : jogador.getDisciplinasMatriculadas()) {
+                if (disciplina.calcularAprovacao()) {
+                    jogador.aprovarDisciplina(disciplina);
+                }
+            }
         }
 
         aplicarMesada(jogador);
