@@ -3,6 +3,7 @@ package service;
 import model.Avaliacao;
 import model.Jogador;
 import model.Mundo;
+import model.Disciplina;
 
 import java.util.Random;
 
@@ -54,6 +55,7 @@ public class AvaliacaoService {
         }
 
         avaliacao.setNota(nota);
+        Disciplina.registrarNota(avaliacao.getNumProva(), nota);
 
         atualizarDesempenho(jogador, nota);
         return nota;
