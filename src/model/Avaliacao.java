@@ -5,6 +5,7 @@ public class Avaliacao {
     private Disciplina disciplina;
     private int conhecimentoBase;
     private double nota;
+    private int numProva;
     private Dificuldade dificuldade;//Dificuldade da prova
     private Estrategia estrategia;//Estrategia usada na prova
     //Dificuldades das avaliacao e possíveis estrategias para utilizar na avaliacao
@@ -66,5 +67,13 @@ public class Avaliacao {
 
     public void setEstrategia(Estrategia estrategia) {
         this.estrategia = estrategia;
+    }
+
+    public int getNumProva() {
+        return numProva;
+    }
+
+    public void setNumProva(int numProva) {
+        this.numProva = numProva;
     }
 }
