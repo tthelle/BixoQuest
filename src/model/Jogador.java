@@ -45,7 +45,7 @@ public class Jogador {
     }
 
     public void setConhecimento(int conhecimento) {
-        this.conhecimento = Math.max(0, Math.min(100, energia));
+        this.conhecimento = Math.max(0, Math.min(100, conhecimento));
     }
 
     public int getMotivacao() {
@@ -53,7 +53,7 @@ public class Jogador {
     }
 
     public void setMotivacao(int motivacao) {
-        this.motivacao = Math.max(0, Math.min(100, energia));
+        this.motivacao = Math.max(0, Math.min(100, motivacao));
     }
 
     public int getSaude() {
@@ -61,7 +61,7 @@ public class Jogador {
     }
 
     public void setSaude(int saude) {
-        this.saude = Math.max(0, Math.min(100, energia));
+        this.saude = Math.max(0, Math.min(100, saude));
     }
 
     public double getDinheiro() {
