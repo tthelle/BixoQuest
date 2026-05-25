@@ -1,7 +1,5 @@
 package model;
 
-import java.io.Serializable;
-
 public class Disciplina {
     private String nome;
     private int semestreReferente;
@@ -10,8 +8,8 @@ public class Disciplina {
     private boolean aprovado;
     private int aulasAssistidas;
     public static final int TOTAL_AULAS = 2; //Total de aulas por semestre
-    private double notaProva1;
-    private double notaProva2;
+    private static double notaProva1;
+    private static double notaProva2;
     //Construtor
     public Disciplina(String n, int semReferente, int conNece, Disciplina[] preRequisitos) {
         this.nome = n;
@@ -90,7 +88,7 @@ public class Disciplina {
         }
     }
 
-    public void registrarNota(int numeroProva, double nota){
+    public static void registrarNota(int numeroProva, double nota){
         if (numeroProva == 1){
             notaProva1 = nota;
         } else {
