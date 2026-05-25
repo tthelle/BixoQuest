@@ -1,6 +1,8 @@
 package model;
 
-public class Disciplina {
+import java.io.Serializable;
+
+public class Disciplina implements Serializable {
     private String nome;
     private int semestreReferente;
     private int conhecimentoNecessario;
@@ -10,7 +12,6 @@ public class Disciplina {
     public static final int TOTAL_AULAS = 2; //Total de aulas por semestre
     private double notaProva1;
     private double notaProva2;
-    public int faltas;
     //Construtor
     public Disciplina(String n, int semReferente, int conNece, Disciplina[] preRequisitos) {
         this.nome = n;
@@ -21,7 +22,6 @@ public class Disciplina {
         this.aulasAssistidas = 0;
         this.notaProva1 = 0;
         this.notaProva2 = 0;
-        this.faltas = 0;
     }
     //Getters e Setters
     public String getNome() {
