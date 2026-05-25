@@ -2,7 +2,7 @@ package model;
 
 import java.io.Serializable;
 
-public class Disciplina implements Serializable {
+public class Disciplina {
     private String nome;
     private int semestreReferente;
     private int conhecimentoNecessario;
